@@ -1,5 +1,6 @@
 # Portfolio
 Portfolio with the Team activities and the Project of the semester.
+
 ## Prerequisites
 
 - You must have Node installed. visit https://byui-cit.github.io/advcss/lesson01/l01-software.html and skip to the Node section for instructions
