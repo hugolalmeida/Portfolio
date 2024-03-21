@@ -1,58 +1,306 @@
-body {
-  width: 500px;
-  margin: 0;
-  margin-left: 30%;
-  font-family: sans-serif;
-}
-header {
-  background-color: #dc1a21;
-  box-shadow: 5px 5px 10px #6f7364;
-}
-#grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-radius: 20px;
-}
-main {
-  margin-left: 30px;
-}
-.line {
-  margin-top: -30px;
-}
-.line1 {
-  margin-bottom: -10px;
-}
-
-#me {
-  width: 100px;
-  margin: 20px;
-  grid-column: 1;
-  box-shadow: 5px 5px 10px #6f7364;
-}
-#tittle {
-  font-family: sans-serif;
-}
-
-h1 {
-  font-family: sans-serif;
-  align-self: center;
-  grid-column: 2/4;
-  color: white;
-}
-footer {
-  text-align: center;
+/* Your existing CSS styles remain unchanged */
+body{
   margin: 0px;
-  background-color: #373f51;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px #6f7364;
 }
-#text {
-  padding-top: 10px;
-  font-family: sans-serif;
-  color: white;
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 
-#update {
-  padding-bottom: 20px;
-  color: #f6aa1c;
+
+.left-section {
+  background-color: #8404f4;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column: 1/5;
+  height: 952px;
+  
 }
+
+.right-section {
+  align-self: center;
+  grid-column: 6/11;
+  margin-left: 20px; /* Adjust margin as needed */
+  margin-bottom: 50px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 376px;
+  height: 538.6px;
+  grid-column: 6/11;
+  color: #fff;
+  background-color: #20013b;
+  padding-top: 20px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  left: 20%;
+  top: 20%;
+  box-shadow:  0 1px 4px rgba(0, 0, 0, .6);
+}
+
+.profile-photo {
+  width: 201px; /* Adjust size of the profile photo */
+  height: 205px; /* Adjust size of the profile photo */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.social-icons {
+  background-color: #fff;
+  margin-top: 60px;
+  width: 100%;
+  height: 50px;
+}
+
+.social-icons a {
+  margin-top: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.about-me {
+  margin-bottom: 20px;
+}
+
+.about-me h2 {
+  margin-top: 0;
+}
+#line {
+  width: 40px;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff ;
+  color: #333;
+  padding: 10px 20px;
+  position: fixed; /* Make the navbar sticky */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.left-side h1 {
+  margin: 0;
+}
+
+.left-side p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.right-side{
+  margin-right: 40px;
+}
+
+.right-side a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.right-side a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info p{
+  margin-left: 50px;
+}
+
+.info{
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info h4 {
+  text-align: center;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media h4 {
+  text-align: center;
+}
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* 
+RESUME STYLE */
+#resume {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  color: #333;
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.resume-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-card {
+  flex: 0 0 calc(50% - 10px);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.resume-card h3 {
+  margin-top: 0;
+}
+
+.resume-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume-card ul li {
+  margin-bottom: 10px;
+}
+
+/* PROJECT STYLE */
+#projects {
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-info h3,
+.project-info p {
+  color: #fff;
+  margin: 0;
+}
+
+.project-card:hover .project-info {
+  opacity: 1;
+}
+
+/* CONTACT STYLE */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(50% - 5px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  display: inline-block;
+}
+
+.form-group textarea {
+  display: block;
+}
+
+.button-group {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+

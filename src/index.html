@@ -1,98 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="left-side">
+          <h1>Your Name</h1>
+          <p>Web Developer</p>
+      </div>
+      <div class="right-side">
+          <a href="#about">About me</a>
+          <a href="#resume">Resume</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+      </div>
+  </nav>
+  </header>
+  <main>
+    <div class="main-container" id="about">
+        <!-- Left Section: Card with Photo and Social Media Icons -->
+        <div class="left-section">
+            <div class="profile-card">
+                <img src="../src/public/image/me1.jpeg" alt="Your Name" class="profile-photo">
+                <h2>Your Name</h2>
+                <hr id="line">
+                <h1>Professional Title</h1>
+                <div class="social-icons">
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Right Section: Information about You -->
+        <div class="right-section">
+            <div class="about-me" >
+                <h1>About Me</h1>
+                <p>Add information about yourself here.</p>
+            </div>
+            <hr>
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <div class="resume-content">
+          <h2>Resume</h2>
+          <a href="your-resume.pdf" download class="download-btn" target="_blank">Download Resume</a>
+  
+          <div class="resume-cards">
+              <div class="resume-card">
+                  <h3>Skills</h3>
+                  <ul>
+                      <li>Web Development</li>
+                      <li>JavaScript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <!-- Add more skills as needed -->
+                  </ul>
+              </div>
+              <div class="resume-card">
+                  <h3>Experience</h3>
+                  <ul>
+                      <li>Frontend Developer - Company XYZ</li>
+                      <li>Internship - Company ABC</li>
+                      <!-- Add more experience as needed -->
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+<!-- 
+  PROJECT SECTION -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="project-card" onclick="window.location.href='project-page.html';">
+        <img src="../src/public/image/me1.jpeg" alt="Project 1">
+        <div class="project-info">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+    </div>
+    <!-- Add more project cards as needed -->
+    <div class="project-card" onclick="window.location.href='project-page.html';">
+      <img src="../src/public/image/me1.jpeg" alt="Project 1">
+      <div class="project-info">
+          <h3>Project 1</h3>
+          <p>Description of Project 1</p>
+      </div>
+  </div>
+  <div class="project-card" onclick="window.location.href='project-page.html';">
+    <img src="../src/public/image/me1.jpeg" alt="Project 1">
+    <div class="project-info">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+    </div>
+</div>
+</section>
 
-    <title>Portfolio WDD330</title>
-    <script defer src="js/portfolio.js" type="module"></script>
-    <!--  Use 'defer' help to get better result and link de js file with html -->
-  </head>
-  <body>
-    <header id="grid">
-      <img id="me" src="public/image/me1.jpeg" alt="Me" />
-      <h1>Hugo L. Almeida</h1>
-    </header>
-    <main>
-      <h2 id="title"><strong>WDD 330 Portfolio</strong></h2>
-      <p class="line">
-        _________________________________________________________
-      </p>
-      <ul>
-        <li>
-          Team Activity:
-          <a href="https://earnest-marshmallow-2bedd0.netlify.app/"
-            >SleepOutside Site</a
-          >
-        </li>
-        <li>
-          Trello:
-          <a href="https://trello.com/b/5hAs8LIe/project-board"
-            >SleepOutside Trello Board</a
-          >
-        </li>
-        <li>
-          Team GitHub:
-          <a href="https://github.com/tulio1990/team4">SleepOutside GitHub</a>
-        </li>
-        <li>
-          Project:
-          <a href="https://opbuildchar.netlify.app/">Building Character Site</a>
-        </li>
-        <li>
-          Project GitHub<a href="https://github.com/hugolalmeida/Project-WDD330"
-            >Building Character GitHub</a
-          >
-        </li>
-      </ul>
-      <h2 id="title"><strong>Resources</strong></h2>
-      <ul>
-        <li>
-          <a href="https://getcssscan.com/css-buttons-examples">Buttons css</a>
-        </li>
-        <li>
-          <a href="https://swiperjs.com/demos#slides-per-group-skip">Swiper</a>
-        </li>
-        <li>
-          <a href="https://freefrontend.com/css-cards/">Cards effects</a>
-        </li>
-        <li>
-          <a
-            href="https://css-tricks.com/css-link-hover-effects/#aa-the-right-to-left-color-swap-link-hover-effect"
-            >Read more css</a
-          >
-        </li>
-        <li><a href="https://picresize.com/">Render images</a></li>
-        <li>
-          <a href="http://www.brandgradients.com/gold-gradient/">Gold Color</a>
-        </li>
-        <li>
-          <a
-            href="https://www.tutorialstonight.com/how-to-get-all-checked-checkbox-value-in-javascript"
-            >Get all Checked itens</a
-          >
-        </li>
-        <li>
-          <a href="https://onepiece.fandom.com/wiki/One_Piece_Wiki">One Piece Wiki</a>
-        </li>
-        <li>Others projects</li>
-      </ul>
-      <p class="line1">
-        _________________________________________________________
-      </p>
-      <p>Portfolio for the WDD 330 semester.</p>
-    </main>
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form action="send-email.php" method="post">
+          <div class="form-group">
+              <label for="first_name">First Name:</label><br>
+              <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+              <label for="last_name">Last Name:</label><br>
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+              <label for="subject">Subject:</label><br>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" placeholder="Message" rows="1" required></textarea>
+          </div>
+          <div class="form-group button-group">
+              <button type="submit">Send Message</button>
+          </div>
+      </form>
+  </div>
+</section>
+
+  </main>
+    <!-- Footer Section -->
     <footer>
-      <h2 id="text">
-        &copy; <span class="currentyear"></span> .:|:. Hugo L. Almeida .:|:.
-        RJ-Brazil
-      </h2>
-      <p id="update">Last Updated: <span id="jscript"></span></p>
+      <div class="footer-info">
+        <p>&copy; 2024 Your Name</p>
+        <div class="info">
+        <div class="contact-info">
+          <h4>Contact</h4>
+          <p>Email: example@example.com</p>
+          <p>Phone: +1234567890</p>
+      </div>
+      <div class="social-media">
+        <h4>Follow</h4>
+          <a href="https://www.facebook.com/example"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="https://www.twitter.com/example"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/example"><img src="instagram-icon.png" alt="Instagram"></a>
+          <!-- Add more social media icons as needed -->
+      </div>
+    </div>
+    </div>
     </footer>
-    <!-- <script src="scripts/assign.js"></script> Use here at bottom to get better results-->
-  </body>
+
+</body>
 </html>
