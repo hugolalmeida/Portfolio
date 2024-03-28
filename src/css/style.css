@@ -9,7 +9,7 @@ body{
 
 
 .left-section {
-  background-color: #8404f4;
+  background-color: #2274A5;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-column: 1/5;
@@ -19,7 +19,7 @@ body{
 
 .right-section {
   align-self: center;
-  grid-column: 6/11;
+  grid-column: 6/9;
   margin-left: 20px; /* Adjust margin as needed */
   margin-bottom: 50px;
 }
@@ -32,7 +32,7 @@ body{
   height: 538.6px;
   grid-column: 6/11;
   color: #fff;
-  background-color: #20013b;
+  background-color: #242038;
   padding-top: 20px;
   text-align: center;
   margin: 20px;
@@ -66,6 +66,7 @@ body{
 
 .about-me {
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .about-me h2 {
@@ -169,6 +170,9 @@ RESUME STYLE */
   max-width: 800px;
   margin: 0 auto;
 }
+#r-download{
+  text-align: center;
+}
 
 .download-btn {
   display: inline-block;
@@ -207,11 +211,15 @@ RESUME STYLE */
 /* PROJECT STYLE */
 #projects {
   padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #2274A5;
+}
+#project-cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .project-card {
   width: calc(33.33% - 20px);
   margin-bottom: 20px;
@@ -252,6 +260,7 @@ RESUME STYLE */
 #contact {
   padding: 50px 20px;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .contact-form {
@@ -265,7 +274,7 @@ RESUME STYLE */
 
 .form-group {
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .form-group input[type="text"],
@@ -284,7 +293,7 @@ RESUME STYLE */
 }
 
 .form-group textarea {
-  display: block;
+  height: 150px;
 }
 
 .button-group {
@@ -303,4 +312,6 @@ button {
 button:hover {
   background-color: #555;
 }
-
+.icons{
+  width: 30px;
+}
