@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Web Developer</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <title>Hugo L. Almeida - Software Development Student</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/portfolio.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="left-side">
           <h1>Hugo L. Almeida</h1>
-          <p>Desenvolvedor Web e Software</p>
+          <p>Software Development Student</p>
       </div>
       <div class="right-side">
+          
+            <label for="languageSwitchPT">PT</label>
+            <label class="switch">
+                <input type="checkbox" id="languageSwitchPT">
+                <span class="slider round"></span>
+            </label>
+            <label for="languageSwitchENG">ENG</label>
+        
           <a href="#about">Sobre Mim</a>
           <a href="#resume">Curriculo</a>
           <a href="#projects">Projetos</a>
@@ -29,10 +38,10 @@
                 <img src="../src/public/image/WhatsApp_Image_2024-02-19_at_17.00.00-removebg-preview.png" alt="Your Name" class="profile-photo">
                 <h2>Hugo L. Almeida</h2>
                 <hr id="line">
-                <h1>Desenvolvedor Web e Software</h1>
+                <h1>Software Development Student</h1>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/hugollalmeida/" target="_blank"><img src="../src/public/image/instagram-circle-logo-svgrepo-com.svg" alt="Instagram" class="icons"></a>
-                    <a href="https://www.facebook.com/hugoleonardo.lopesalmeida" target="_blank"><img src="../src/public/image/facebook-3-logo-svgrepo-com.svg" alt="Facebook" class="icons"></a>
+                    <a href="https://github.com/hugolalmeida" target="_blank"><img src="../src/public/image/github-142-svgrepo-com.svg" alt="GitHub" class="icons"></a>
                     <a href="https://www.linkedin.com/in/hugo-l-almeida-023701221/" target="_blank"><img src="../src/public/image/linkedin-icon-logo-svgrepo-com.svg" alt="LinkedIn" class="icons"></a>
                 </div>
             </div>
@@ -86,28 +95,52 @@
 <!-- 
   PROJECT SECTION -->
   <section id="projects">
-    <h1>Projects</h1>
+    <h1>Projetos</h1>
     <div id="project-cards">
-    <div class="project-card" onclick="window.location.href='project-page.html';">
-        <img src="../src/public/image/me1.jpeg" alt="Project 1">
+        <div class="project-card" >
+            <div class="logo">
+                <img src="./public/image/noun_Tent_2517.svg" alt="Sleep Outside Project" />
+                <div>Sleep<span class="highlight">Outside</span></div>
+              </div>
         <div class="project-info">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
+            <h3>Sleep Outside</h3>
+            <p>Description of the project goes here. Provide a brief overview of what the project is about.</p>
+            <div class="project-details">
+                <strong>Languages:</strong> JavaScript, HTML, CSS<br>
+                <strong>Contributors:</strong> Hugo L. Almeida, Jose Giron, Nefi Perez, Tulio and Aaron Eardley <br> <br>
+                <strong>Access:</strong><br>
+                <img id="card-icon" src="./public/image/github-svgrepo-com (1).svg" alt="GitHub"  onclick="window.open('https://github.com/tulio1990/team4', '_blank');">
+                <img src="./public/image/noun_Tent_2517.svg" alt="Sleep Outside Project" onclick="window.open('https://earnest-marshmallow-2bedd0.netlify.app/', '_blank');">
+            </div>
+            
         </div>
     </div>
     <!-- Add more project cards as needed -->
-    <div class="project-card" onclick="window.location.href='project-page.html';">
-      <img src="../src/public/image/me1.jpeg" alt="Project 1">
+    <div class="project-card" >
+        <div class="logo">
+        <img src="./public/image/18246195_v987-11a_inPixio.png" alt="krazy katz Project">
+        <div>Krazy Katz</div>
+        </div>
       <div class="project-info">
-          <h3>Project 1</h3>
-          <p>Description of Project 1</p>
+        <h3>Krazy Katz API</h3>
+        <p>Description of the project goes here. Provide a brief overview of what the project is about.</p>
+        <div class="project-details">
+            <strong>Languages:</strong> JavaScript, HTML, CSS, MongoDB<br>
+            <strong>Contributors:</strong> Hugo L. Almeida, Juliana Lemos, Nina Saunders, Teresa Moser and Minhah Chavez <br><br>
+            <strong>Access:</strong><br>
+            <img id="card-icon" src="./public/image/github-svgrepo-com (1).svg" alt="GitHub"  onclick="window.open('https://github.com/Kiyoos/krazykatz', '_blank');">
+                <img src="./public/image/18246195_v987-11a_inPixio.png" alt="krazy katz API" onclick="window.open('https://krazykatz.onrender.com', '_blank');">
+        </div>
       </div>
   </div>
   <div class="project-card" onclick="window.location.href='project-page.html';">
-    <img src="../src/public/image/me1.jpeg" alt="Project 1">
+    <div class="logo">
+        <img src="./public/image/chat-square-code-svgrepo-com.svg" alt="Development">
+        <div>under development ...</div>
+        </div>
     <div class="project-info">
-        <h3>Project 1</h3>
-        <p>Description of Project 1</p>
+        <h3>Not yet</h3>
+        <p>This part is under development ...</p>
     </div>
 </div>
 </div>
@@ -117,7 +150,7 @@
 <section id="contact">
   <div class="contact-form">
       <h2>Contact Me</h2>
-      <form action="send-email.php" method="post">
+      <!-- <form action="send-email.php" method="post">
           <div class="form-group">
               <label for="first_name">First Name:</label><br>
               <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
@@ -142,7 +175,9 @@
           <div class="form-group button-group">
               <button type="submit">Enviar Mensagem</button>
           </div>
-      </form>
+      </form> -->
+      <img src="./public/image/chat-square-code-svgrepo-com.svg" alt="Under development ...">
+      <h3>Under Development ...</h3>
   </div>
 </section>
 
@@ -160,7 +195,7 @@
       <div class="social-media">
         <h4>Seguir</h4>
         <a href="https://www.instagram.com/hugollalmeida/" target="_blank"><img src="../src/public/image/instagram-circle-logo-svgrepo-com.svg" alt="Instagram" class="icons"></a>
-        <a href="https://www.facebook.com/hugoleonardo.lopesalmeida" target="_blank"><img src="../src/public/image/facebook-3-logo-svgrepo-com.svg" alt="Facebook" class="icons"></a>
+        <a href="https://github.com/hugolalmeida" target="_blank"><img src="../src/public/image/github-142-svgrepo-com.svg" alt="GitHub" class="icons"></a>
         <a href="https://www.linkedin.com/in/hugo-l-almeida-023701221/" target="_blank"><img src="../src/public/image/linkedin-icon-logo-svgrepo-com.svg" alt="LinkedIn" class="icons"></a>
           <!-- Add more social media icons as needed -->
       </div>

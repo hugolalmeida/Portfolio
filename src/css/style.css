@@ -1,4 +1,20 @@
 /* Your existing CSS styles remain unchanged */
+:root {
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* colors */
+  --primary-color: #f0a868;
+  --secondary-color: #525b0f;
+  --tertiary-color: #a4b8c4;
+  --light-grey: #d0d0d0;
+  --dark-grey: #303030;
+
+  /* sizes */
+  --font-base: 18px;
+  --small-font: 0.8em;
+  --large-font: 1.2em;
+}
+
 body{
   margin: 0px;
 }
@@ -88,6 +104,73 @@ body{
     top: 0; /* Position it at the top of the viewport */
     width: 100%; /* Full width */
     z-index: 1000; /* Ensure it's above other content */
+}
+
+#switch-bottom{
+  text-decoration: none;
+}
+
+/* Styles for the language switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 10px; /* Adjust spacing between labels and switch */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Styles for language labels */
+label {
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 5px; /* Adjust spacing between labels */
 }
 
 .left-side h1 {
@@ -221,10 +304,10 @@ RESUME STYLE */
   justify-content: space-between;
 }
 .project-card {
-  width: calc(33.33% - 20px);
+  width: 366px;
+  height: 492px;
   margin-bottom: 20px;
   position: relative;
-  cursor: pointer;
 }
 
 .project-card img {
@@ -246,15 +329,59 @@ RESUME STYLE */
   box-sizing: border-box;
 }
 
-.project-info h3,
+.project-info h3{
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
 .project-info p {
   color: #fff;
-  margin: 0;
+  font-size: var(--font-base);
+    margin-bottom: 5px;
+  
+}
+.project-details {
+  font-size: var(--font-body);
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.project-details img {
+  cursor: pointer;
+  width: 40px;
 }
 
 .project-card:hover .project-info {
   opacity: 1;
 }
+
+.logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-family: var(--font-headline);
+  margin-right: 50px;
+  background-color: #f9f9f9;
+  align-items: center;
+  color: #242038;
+  border-radius: 5px;
+  height: 100%;
+  justify-content: center;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+}
+
+.highlight {
+  color: var(--tertiary-color);
+}
+
+
 
 /* CONTACT STYLE */
 #contact {
@@ -266,6 +393,10 @@ RESUME STYLE */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.contact-form img{
+  width: 250px;
 }
 
 .contact-form h2 {
@@ -315,3 +446,4 @@ button:hover {
 .icons{
   width: 30px;
 }
+
