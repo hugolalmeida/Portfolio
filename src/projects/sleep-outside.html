@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Outside - Hugo L. Almeida</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+</head>
+<body>
+    <!-- Header as in template -->
+    
+    <main class="project-detail-page fade-in">
+        <div class="project-header">
+            <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+            <div class="project-title">
+                <img src="../public/image/noun_Tent_2517.svg" alt="Sleep Outside Logo" class="project-logo">
+                <h1>Sleep<span class="highlight">Outside</span></h1>
+            </div>
+        </div>
+
+        <section class="project-overview">
+            <div class="overview-content">
+                <h2>Overview</h2>
+                <p>Sleep Outside is a collaborative e-commerce platform designed for outdoor enthusiasts to purchase camping products. Developed as a college project, it features a user-friendly interface where customers can browse camping gear, view detailed product descriptions, add items to their cart, and complete purchases.</p>
+                
+                <div class="project-links">
+                    <a href="https://earnest-marshmallow-2bedd0.netlify.app/" target="_blank" class="button primary">Live Demo</a>
+                    <a href="https://github.com/tulio1990/team4" target="_blank" class="button secondary">GitHub Repository</a>
+                </div>
+            </div>
+            <div class="overview-image">
+                <img src="../public/image/manutencao-sites-importancia.png" alt="Sleep Outside Overview">
+            </div>
+        </section>
+
+        <section class="project-detail">
+            <div class="tech-stack">
+                <h2>Technologies Used</h2>
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <img src="../public/image/manutencao-sites-importancia.png" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-icon">
+                        <img src="../public/image/manutencao-sites-importancia.png" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-icon">
+                        <img src="../public/image/manutencao-sites-importancia.png" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <!-- Add more tech icons as needed -->
+                </div>
+            </div>
+            
+            <div class="features">
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li><strong>Product Catalog</strong> - Browse a variety of camping products organized by categories with advanced filtering options.</li>
+                    <li><strong>Shopping Cart</strong> - Add products to cart, adjust quantities, and see real-time price updates.</li>
+                    <li><strong>Checkout Process</strong> - User-friendly checkout flow with shipping and payment information collection.</li>
+                    <li><strong>Responsive Design</strong> - Optimized shopping experience across all device sizes, from mobile to desktop.</li>
+                    <li><strong>Product Details</strong> - Comprehensive product information including specifications, pricing, and availability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="development-process">
+            <h2>Development Process</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Planning & Requirements Gathering</h3>
+                        <p>Our team began by defining the project scope and requirements. We created user stories and determined the core features needed for an e-commerce platform focused on camping gear.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Design & Wireframing</h3>
+                        <p>We created wireframes and mockups to establish the user interface and experience. The design focused on showcasing products effectively while maintaining an intuitive navigation system.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Front-end Development</h3>
+                        <p>We implemented the UI using HTML, CSS, and JavaScript, focusing on creating responsive components that would work across different devices.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Feature Implementation</h3>
+                        <p>We systematically implemented key features like product listings, shopping cart functionality, and checkout process, using modular JavaScript to maintain clean code.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Testing & Deployment</h3>
+                        <p>We conducted extensive testing to ensure all features worked correctly across different browsers and devices before deploying to Netlify.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="challenges">
+            <h2>Challenges & Solutions</h2>
+            <div class="challenge-solution">
+                <div class="challenge">
+                    <h3>Challenge</h3>
+                    <p>Creating a persistent shopping cart that maintained product selections even after the user navigated away from the page or refreshed the browser.</p>
+                </div>
+                <div class="solution">
+                    <h3>Solution</h3>
+                    <p>We implemented localStorage to save cart data directly in the user's browser, ensuring cart contents would persist across page refreshes and browser sessions.</p>
+                    <pre><code>// Sample code for cart persistence
+function saveCart(cart) {
+  localStorage.setItem('so-cart', JSON.stringify(cart));
+}
+
+function getCart() {
+  const cart = localStorage.getItem('so-cart');
+  return cart ? JSON.parse(cart) : [];
+}</code></pre>
+                </div>
+            </div>
+            
+            <div class="challenge-solution">
+                <div class="challenge">
+                    <h3>Challenge</h3>
+                    <p>Implementing responsive design for product listings that looked good on all device sizes while maintaining good performance.</p>
+                </div>
+                <div class="solution">
+                    <h3>Solution</h3>
+                    <p>We used CSS Grid and Flexbox for layout, combined with media queries to adjust the display based on screen size. This allowed us to create a fluid interface that adapted to different viewports.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-contribution">
+            <h2>My Contribution</h2>
+            <p>As a team member on this project, I was responsible for:</p>
+            <ul>
+                <li><strong>Product Detail Pages</strong> - Designed and implemented the detailed product view with specifications, pricing, and add-to-cart functionality</li>
+                <li><strong>Shopping Cart Logic</strong> - Developed the JavaScript functionality for adding, removing, and updating items in the cart</li>
+                <li><strong>Responsive Design Implementation</strong> - Ensured the application worked flawlessly across mobile, tablet, and desktop screens</li>
+                <li><strong>User Interface Improvements</strong> - Added animations and transitions to enhance the user experience</li>
+            </ul>
+        </section>
+
+        <section class="reflections">
+            <h2>Reflections & Learnings</h2>
+            <p>Working on Sleep Outside was a valuable learning experience that helped me grow as a developer. Collaborating with a team to build a complex e-commerce platform required clear communication, effective task division, and consistent coding standards.</p>
+            <div class="key-takeaways">
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>The importance of planning and wireframing before diving into code</li>
+                    <li>How to effectively use localStorage for client-side data persistence</li>
+                    <li>Techniques for creating responsive designs that work across all device sizes</li>
+                    <li>The value of modular JavaScript for maintainable code in team projects</li>
+                    <li>How to collaborate effectively using Git for version control</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="next-project">
+            <h2>Next Project</h2>
+            <div class="project-card mini">
+                <img src="../public/image/18246195_v987-11a_inPixio.png" alt="Krazy Katz API">
+                <div class="card-content">
+                    <h3>Krazy Katz API</h3>
+                    <p>A RESTful API interface for performing CRUD operations on MongoDB collections.</p>
+                    <a href="krazy-katz.html" class="button">View Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer as in template -->
+    
+    <!-- Scripts as in template -->
+</body>
+</html>
